@@ -1,0 +1,14 @@
+2013-11-06 15:08:32 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Decomposition: DECOMPOSE
+2013-11-06 15:08:32 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Rewriting Language: UCQ
+2013-11-06 15:08:32 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Subsumption Check Strategy: INTRADEC
+2013-11-06 15:08:32 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Negative Constraints Check Strategy NONE
+2013-11-06 15:08:33 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Expressivity: [STICKY, GUARDED, LINEAR]
+2013-11-06 15:08:33 deri.iris.queryrewriting.GroupPreferencesTest1 [DEBUG] Computing position dependencies.
+2013-11-06 15:08:42 deri.iris.queryrewriting.GroupPreferencesTest1 [DEBUG] Computing atom coverage graph.
+2013-11-06 15:08:42 deri.iris.queryrewriting.RewritingUtils [TRACE] Computing inferred dependencies.
+2013-11-06 15:08:53 deri.iris.queryrewriting.GroupPreferencesTest1 [DEBUG] Finished rewriting constraints.
+2013-11-06 15:08:53 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] con-city-k: 0-Peoria-1-CSU
+2013-11-06 15:08:54 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Processing file: gr1_sc1
+2013-11-06 15:08:54 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Processing query: Q1(?A) :- cuisine(?A).
+2013-11-06 15:09:46 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Processing file: gr1_sc8
+2013-11-06 15:09:46 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Processing query: Q2(?A) :- place(?A).

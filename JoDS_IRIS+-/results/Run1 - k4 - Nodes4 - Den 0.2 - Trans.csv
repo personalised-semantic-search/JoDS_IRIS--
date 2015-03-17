@@ -1,0 +1,5 @@
+"test","query","strategy","k","size [#CQs]","prefGraph[#vertices]","prefGraph[#edges]","prefGraphTransitive[#vertices]","prefGraphTransitive[#edges]","prefGraph-TOPk[#vertices]","prefGraph-TOPk[#edges]","[#answers]","test","query","strategy","k","depgraph [msec]","total rewriting [msec]","generate pref [msec]","transitive pref [msec]","merging operator [msec]","TOPk[msec]"
+"test1","Q0","PREFS_GEN","4","23","4","1","4","1","4","1","4","test1","Q0","PREFS_GEN","4","20","85","18","1","5","1"
+"test1","Q0","PREFS_RANK","4","23","4","1","4","1","4","1","4","test1","Q0","PREFS_RANK","4","20","85","18","1","80","1"
+"test1","Q0","PREFS_PT","4","23","4","1","4","1","2","0","2","test1","Q0","PREFS_PT","4","20","85","18","1","1","0"
+"test1","Q0","PREFS_SORT","4","23","4","1","4","1","4","3","4","test1","Q0","PREFS_SORT","4","20","85","18","1","0","0"

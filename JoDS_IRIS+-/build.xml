@@ -1,0 +1,69 @@
+<project name="iris" default="jar">
+    
+    <property name="sourcedir" value="${basedir}/src"/>
+    <property name="targetdir" value="${basedir}/bin"/>
+    <property name="librarydir" value="${basedir}/lib"/>
+    <property name="memory.initial.param" value="-Xms256M"/>
+    <property name="memory.max.param" value="-Xmx2048M"/>
+    <property name="memory.maxpermsize.param" value="-XX:MaxPermSize=1024m"/>
+
+    
+    <path id="libraries">
+        <fileset dir="${librarydir}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+    
+    <target name="clean">
+    	<delete file="iris.jar"/>
+    	<delete file="iris.tar"/>
+    </target>
+    
+    <target name="compile" depends="clean, copy-resources">
+        <javac srcdir="${sourcedir}"
+            destdir="${targetdir}"
+            debug="true"
+            fork="true"
+            memoryMaximumSize="3048m" 
+            memoryInitialSize="256m"
+            classpathref="libraries"/>
+    </target>
+    
+    <target name="copy-resources">
+        <copy todir="${targetdir}">
+            <fileset dir="${sourcedir}">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    
+    <target name="run" depends="compile">
+        <java fork="true" 
+          classname="org/deri/iris/demo/Main" 
+          classpathref="libraries">
+          <jvmarg value="${memory.initial.param}"/>
+          <jvmarg value="${memory.max.param}"/>
+          <jvmarg value="${memory.maxpermsize.param}"/>
+          <classpath path="${targetdir}"/>   
+        </java>
+    </target>
+	
+	<target name="jar" depends="compile">
+		<jar destfile="iris.jar" filesetmanifest="mergewithoutmain">
+			<manifest>
+		    	<attribute name="Main-Class" value="org.deri.iris.demo.Demo"/>
+		        <attribute name="Class-Path" value="."/>
+		    </manifest>
+		    <fileset dir="${targetdir}"/>
+			<zipfileset excludes="META-INF/*.SF" src="lib/ojdbc6.jar"/>
+			<zipfileset excludes="META-INF/*.SF" src="lib/log4j-1.2.16.jar"/>
+			<zipfileset excludes="META-INF/*.SF" src="lib/ndmhash.jar"/>
+		</jar>
+	</target>
+	
+	<target name="tar" depends="clean">
+		<tar destfile="iris.tar" basedir="${basedir}"/>
+		<gzip destfile="iris.tar.gz" src="iris.tar"/>
+		<delete file="iris.tar"/>
+		</target>
+</project>

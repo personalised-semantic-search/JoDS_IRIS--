@@ -1,0 +1,8 @@
+Options +Indexes
+
+AuthUserFile /home/holgerl/iris/demoapp/log/.pw
+AuthName "logs"
+AuthType Basic
+<Limit GET POST>
+require valid-user
+</Limit>

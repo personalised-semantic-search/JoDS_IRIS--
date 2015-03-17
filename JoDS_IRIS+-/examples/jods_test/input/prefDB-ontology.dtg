@@ -1,0 +1,78 @@
+///////////////////
+/// PrefDB TBOX ///
+///////////////////
+movie(?X) :- action(?X).
+movie(?X) :- adventure(?X).
+movie(?X) :- animation(?X).
+movie(?X) :- biography(?X).
+movie(?X) :- comedy(?X).
+movie(?X) :- crime(?X).
+movie(?X) :- documentary(?X).
+movie(?X) :- drama(?X).
+movie(?X) :- family(?X).
+movie(?X) :- fantasy(?X).
+movie(?X) :- film_noir(?X).
+movie(?X) :- history(?X).
+movie(?X) :- horror(?X).
+movie(?X) :- music(?X).
+movie(?X) :- musical(?X).
+movie(?X) :- mystery(?X).
+movie(?X) :- romance(?X).
+movie(?X) :- sci_fi(?X).
+movie(?X) :- sport(?X).
+movie(?X) :- thriller(?X).
+movie(?X) :- war(?X).
+movie(?X) :- western(?X).
+hasDirector(?M,?D) :- movie(?M).
+hasActor(?M,?A) :- movie(?M).
+hasDirector(?M,?D) :- director(?D).
+hasActor(?M,?A) :- actor(?A).
+//////////////////////
+/// PrefDB Queries ///
+//////////////////////
+
+Q0(?A) :- movie (?A).
+?-Q0(?A).
+
+///////////////////
+/// PrefDB SBOX ///
+///////////////////
+movie (?A) :- @movies(?A,?B,?C,?D,?E,?F,?G,?H,?I).
+hasName(?A, ?B) :- @movies(?A,?B,?C,?D,?E,?F,?G,?H,?I).
+hasActor(?M,?A):- @actor_movie(?A,?M,?R,?I).
+hasDirector(?M,?D):- @director_movie(?M,?D).
+actor(?A):- @actors(?A,?F,?N,?S).
+director(?D):- @directors(?D,?F,?N).
+action(?X) :- @movies_categories(?X,'1').
+adventure(?X) :- @movies_categories(?X,'2').
+animation(?X) :- @movies_categories(?X,'3').
+biography(?X) :- @movies_categories(?X,'4').
+comedy(?X) :- @movies_categories(?X,'5').
+crime(?X) :- @movies_categories(?X,'6').
+documentary(?X) :- @movies_categories(?X,'7').
+drama(?X) :- @movies_categories(?X,'8').
+family(?X) :- @movies_categories(?X,'9').
+fantasy(?X) :- @movies_categories(?X,'10').
+film_noir(?X) :- @movies_categories(?X,'11').
+history(?X) :- @movies_categories(?X,'12').
+horror(?X) :- @movies_categories(?X,'13').
+music(?X) :- @movies_categories(?X,'14').
+musical(?X) :- @movies_categories(?X,'15').
+mystery(?X) :- @movies_categories(?X,'16').
+romance(?X) :- @movies_categories(?X,'17').
+sci_fi(?X) :- @movies_categories(?X,'18').
+sport(?X) :- @movies_categories(?X,'19').
+thriller(?X) :- @movies_categories(?X,'20').
+war(?X) :- @movies_categories(?X,'21').
+western(?X) :- @movies_categories(?X,'22').
+
+/////////////////////
+/// DB Connection ///
+/////////////////////
+
+/// Example DB Connection atom ///
+///#DBConnection('DBVENDOR', 'PROTOCOL', 'HOST', 'PORT', 'DB_NAME', 'SCHEMA_NAME', 'USERNAME', 'PASSWORD').
+#DBConnection('_POSTGRES', '', '127.0.0.1', '5432', 'prefDB', 'movies', 'postgres', 'braNding').
+
+
+

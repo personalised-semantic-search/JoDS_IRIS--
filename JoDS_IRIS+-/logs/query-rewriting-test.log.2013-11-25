@@ -1,0 +1,64 @@
+2013-11-25 11:53:00 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Decomposition: DECOMPOSE
+2013-11-25 11:53:00 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Rewriting Language: UCQ
+2013-11-25 11:53:00 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Subsumption Check Strategy: INTRADEC
+2013-11-25 11:53:00 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Negative Constraints Check Strategy NONE
+2013-11-25 11:53:02 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Expressivity: [GUARDED, LINEAR, STICKY]
+2013-11-25 11:53:02 deri.iris.queryrewriting.GroupPreferencesTest1 [DEBUG] Computing position dependencies.
+2013-11-25 11:53:02 deri.iris.queryrewriting.GroupPreferencesTest1 [DEBUG] Computing atom coverage graph.
+2013-11-25 11:53:02 deri.iris.queryrewriting.RewritingUtils [TRACE] Computing inferred dependencies.
+2013-11-25 11:53:02 deri.iris.queryrewriting.GroupPreferencesTest1 [DEBUG] Finished rewriting constraints.
+2013-11-25 11:53:02 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] con-city-k: 0-Tempe-1-CSU
+2013-11-25 11:53:02 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Processing file: gr1_sc1
+2013-11-25 11:53:02 deri.iris.queryrewriting.GroupPreferencesTest1 [INFO] Processing query: Q1(?A) :- cuisine(?A).
+2013-11-25 15:59:56 deri.iris.queryrewriting.RewritingUtils [TRACE] Computing inferred dependencies.
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Decomposition: DECOMPOSE
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Rewriting Language: UCQ
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Subsumption Check Strategy: INTRADEC
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Negative Constraints Check Strategy NONE
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Processing file: dl-lite-sbox
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Expressivity: [STICKY, GUARDED, LINEAR]
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [DEBUG] Computing position dependencies.
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [DEBUG] Computing atom coverage graph.
+2013-11-25 16:00:26 deri.iris.queryrewriting.RewritingUtils [TRACE] Computing inferred dependencies.
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [DEBUG] Finished rewriting constraints.
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Processing query: Q_0(?A) :- s(?B), t(?A, ?B).
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Writing the output at: /home/onsa/workspace/JoDS_IRIS+-/examples/rewriting_test/output/dl-lite-sbox/Q_0_rew.dtg
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Processing query: Q_1(?A) :- t(?A, ?B).
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Writing the output at: /home/onsa/workspace/JoDS_IRIS+-/examples/rewriting_test/output/dl-lite-sbox/Q_1_rew.dtg
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Processing query: Q_2(?A) :- p(?A).
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Writing the output at: /home/onsa/workspace/JoDS_IRIS+-/examples/rewriting_test/output/dl-lite-sbox/Q_2_rew.dtg
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Processing query: Q_3(?A) :- s(?A).
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Writing the output at: /home/onsa/workspace/JoDS_IRIS+-/examples/rewriting_test/output/dl-lite-sbox/Q_3_rew.dtg
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Processing query: Q_4(?A, ?B) :- t(?A, ?B), s(?A), p(?B).
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Writing the output at: /home/onsa/workspace/JoDS_IRIS+-/examples/rewriting_test/output/dl-lite-sbox/Q_4_rew.dtg
+2013-11-25 16:00:26 deri.iris.queryrewriting.QueryRewritingTest [INFO] Processing query: Q_5(?B) :- p(?A), p(?C), t(?A, ?B), t(?B, ?C).
+2013-11-25 16:00:27 deri.iris.queryrewriting.QueryRewritingTest [INFO] Writing the output at: /home/onsa/workspace/JoDS_IRIS+-/examples/rewriting_test/output/dl-lite-sbox/Q_5_rew.dtg
+2013-11-25 16:00:27 deri.iris.queryrewriting.QueryRewritingTest [INFO] Processing query: Q_C(?A) :- t(?A, 'giorgio').
+2013-11-25 16:00:27 deri.iris.queryrewriting.QueryRewritingTest [INFO] Writing the output at: /home/onsa/workspace/JoDS_IRIS+-/examples/rewriting_test/output/dl-lite-sbox/Q_C_rew.dtg
+2013-11-25 16:00:28 deri.iris.queryrewriting.PositionDependenciesTest [DEBUG] {(t[1],t[1])=[[]], (t[2],t[2])=[[]], (p[1],p[1])=[[]], (p[1],t[1])=[[t(?X, ?Y) :- p(?X).]], (s[1],s[1])=[[]], (t[1],s[1])=[[s(?X) :- t(?X, ?Y).]], (t[2],t[1])=[[t(?Y, ?X) :- t(?X, ?Y).]], (t[1],t[2])=[[t(?Y, ?X) :- t(?X, ?Y).]], (t[2],s[1])=[[s(?Y) :- t(?X, ?Y).]]}
+2013-11-25 16:00:28 deri.iris.queryrewriting.PositionDependenciesTest [DEBUG] {(t[1],t[1])=[[]], (t[2],t[2])=[[]], (p[1],p[1])=[[]], (p[1],t[1])=[[t(?X, ?Y) :- p(?X).]], (s[1],s[1])=[[]], (t[2],s[1])=[[s(?Y) :- t(?X, ?Y).]], (m[1],m[1])=[[]], (p[1],m[1])=[[m(?X) :- p(?X).]], (s[1],m[1])=[[m(?X) :- s(?X).]]}
+2013-11-25 16:00:28 deri.iris.queryrewriting.PositionDependenciesTest [DEBUG] {(t[1],t[1])=[[]], (t[2],t[2])=[[]], (t[2],t[1])=[[t(?Y, ?X) :- t(?X, ?Y).]], (t[1],t[2])=[[t(?Y, ?X) :- t(?X, ?Y).]]}
+2013-11-25 16:00:28 deri.iris.queryrewriting.PositionDependenciesTest [DEBUG] {(s[1],s[1])=[[]], (t[1],t[1])=[[]], (t[2],t[2])=[[]], (t[1],s[1])=[[s(?X) :- t(?X, ?Y).]], (t[2],t[1])=[[t(?Y, ?X) :- t(?X, ?Y).]], (t[1],t[2])=[[t(?Y, ?X) :- t(?X, ?Y).]]}
+2013-11-25 16:00:28 deri.iris.queryrewriting.AffectedPositionsTest [DEBUG] Computing dependency graph.
+2013-11-25 16:00:28 deri.iris.queryrewriting.AffectedPositionsTest [DEBUG] Expected: [t[2], s[1]]
+2013-11-25 16:00:28 deri.iris.queryrewriting.AffectedPositionsTest [DEBUG] Actual: {s[1]=[t(?X, ?Y) :- p(?X).], t[2]=[t(?X, ?Y) :- p(?X).]}
+2013-11-25 16:00:28 deri.iris.queryrewriting.SQLRewritingTest [INFO] Decomposition: DECOMPOSE
+2013-11-25 16:00:28 deri.iris.queryrewriting.SQLRewritingTest [INFO] Rewriting Language: UCQ
+2013-11-25 16:00:28 deri.iris.queryrewriting.SQLRewritingTest [INFO] Subsumption Check Strategy: INTRADEC
+2013-11-25 16:00:28 deri.iris.queryrewriting.SQLRewritingTest [INFO] Negative Constraints Check Strategy NONE
+2013-11-25 16:00:28 deri.iris.queryrewriting.SQLRewritingTest [INFO] Processing file: dl-lite-sbox
+2013-11-25 16:00:30 deri.iris.queryrewriting.SQLRewritingTest [INFO] Expressivity: [STICKY, GUARDED, LINEAR]
+2013-11-25 16:00:30 deri.iris.queryrewriting.SQLRewritingTest [DEBUG] Computing position dependencies.
+2013-11-25 16:00:30 deri.iris.queryrewriting.SQLRewritingTest [DEBUG] Computing atom coverage graph.
+2013-11-25 16:00:30 deri.iris.queryrewriting.RewritingUtils [TRACE] Computing inferred dependencies.
+2013-11-25 16:00:30 deri.iris.queryrewriting.SQLRewritingTest [DEBUG] Finished rewriting constraints.
+2013-11-25 16:00:30 deri.iris.queryrewriting.SQLRewritingTest [INFO] Processing query: Q_0(?A) :- s(?B), t(?A, ?B).
+2013-11-25 16:00:30 deri.iris.queryrewriting.SQLRewritingTest [INFO] Writing the output at: /home/onsa/workspace/JoDS_IRIS+-/examples/rewriting_test/output/dl-lite-sbox/Q_0_rew.dtg
+2013-11-25 16:00:30 deri.iris.queryrewriting.SQLRewritingTest [DEBUG] -- Processing rewriting: Q_0(?U0) :- t(?U0, ?U1).
+2013-11-25 16:00:30 deri.iris.queryrewriting.SQLRewritingTest [DEBUG] -- Processing rewriting: Q_0(?U0) :- p(?U0).
+2013-11-25 16:00:34 deri.iris.queryrewriting.QueryDecompositionTest [INFO] [q_1(?T0) :- p(?T0, ?T1, ?T2)., q_2(?T3) :- p(?T3, ?T4, ?T5)., q_3(?T0, ?T3) :- s(?T0), r(?T0, ?T3), s(?T3).]
+2013-11-25 16:03:12 deri.iris.queryrewriting.RewritingUtils [TRACE] Computing inferred dependencies.
+2013-11-25 16:04:48 deri.iris.queryrewriting.RewritingUtils [TRACE] Computing inferred dependencies.
+2013-11-25 16:05:34 deri.iris.queryrewriting.RewritingUtils [TRACE] Computing inferred dependencies.
+2013-11-25 16:07:54 deri.iris.queryrewriting.RewritingUtils [TRACE] Computing inferred dependencies.
+2013-11-25 16:42:34 deri.iris.queryrewriting.RewritingUtils [TRACE] Computing inferred dependencies.

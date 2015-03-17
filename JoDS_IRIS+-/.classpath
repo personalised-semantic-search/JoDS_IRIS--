@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="org/deri/iris/evaluation/qsq/" kind="src" path="test"/>
+	<classpathentry kind="src" path="app"/>
+	<classpathentry excluding="org/deri/iris/evaluation/qsq/" kind="src" path="src"/>
+	<classpathentry kind="src" path="parser"/>
+	<classpathentry kind="src" path="api"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/ext/sablecc/org"/>
+	<classpathentry kind="lib" path="lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="lib/guava-14.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.11-bin.jar"/>
+	<classpathentry kind="lib" path="lib/ndmhash.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="lib/opencsv-2.3.jar"/>
+	<classpathentry kind="lib" path="lib/postgresql-9.2-1003.jdbc4.jar"/>
+	<classpathentry kind="lib" path="lib/ext/sablecc/sablecc-anttask.jar"/>
+	<classpathentry kind="lib" path="lib/ext/sablecc/sablecc.jar"/>
+	<classpathentry kind="lib" path="lib/xmlunit1.0.jar"/>
+	<classpathentry kind="lib" path="lib/graphSrc/jgrapht-0.8.3/lib/jgraph.jar"/>
+	<classpathentry kind="lib" path="lib/graphSrc/jgrapht-0.8.3/lib/junit.jar"/>
+	<classpathentry kind="lib" path="lib/graphSrc/jgrapht-0.8.3/lib/svnant.jar"/>
+	<classpathentry kind="lib" path="lib/graphSrc/jgrapht-0.8.3/lib/svnClientAdapter.jar"/>
+	<classpathentry kind="lib" path="lib/graphSrc/jgrapht-0.8.3/lib/TGGraphLayout.jar"/>
+	<classpathentry kind="lib" path="lib/graphSrc/jgrapht-0.8.3/lib/xmlunit1.0.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="lib/jgrapht-jdk1.6.jar"/>
+	<classpathentry kind="lib" path="lib/TGGraphLayout.jar"/>
+	<classpathentry kind="lib" path="lib/graphSrc/jgrapht-0.8.3/jgrapht-jdk1.6.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

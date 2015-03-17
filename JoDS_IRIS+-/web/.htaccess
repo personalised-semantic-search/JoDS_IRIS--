@@ -1,0 +1,10 @@
+Options -Indexes
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+#RewriteCond %{REMOTE_ADDR} !138.232.65.141
+
+RewriteRule .* index.php

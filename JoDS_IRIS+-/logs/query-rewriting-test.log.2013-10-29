@@ -1,0 +1,40 @@
+2013-10-29 15:38:37 deri.iris.queryrewriting.GroupPreferencesTest [INFO] Decomposition: DECOMPOSE
+2013-10-29 15:38:37 deri.iris.queryrewriting.GroupPreferencesTest [INFO] Rewriting Language: UCQ
+2013-10-29 15:38:37 deri.iris.queryrewriting.GroupPreferencesTest [INFO] Subsumption Check Strategy: INTRADEC
+2013-10-29 15:38:37 deri.iris.queryrewriting.GroupPreferencesTest [INFO] Negative Constraints Check Strategy NONE
+2013-10-29 15:38:40 deri.iris.queryrewriting.GroupPreferencesTest [INFO] Expressivity: [STICKY, GUARDED, LINEAR]
+2013-10-29 15:38:40 deri.iris.queryrewriting.GroupPreferencesTest [DEBUG] Computing position dependencies.
+2013-10-29 15:38:40 deri.iris.queryrewriting.GroupPreferencesTest [DEBUG] Computing atom coverage graph.
+2013-10-29 15:38:40 deri.iris.queryrewriting.RewritingUtils [TRACE] Computing inferred dependencies.
+2013-10-29 15:38:40 deri.iris.queryrewriting.GroupPreferencesTest [DEBUG] Finished rewriting constraints.
+2013-10-29 15:38:40 deri.iris.queryrewriting.GroupPreferencesTest [INFO] Processing file: t2
+2013-10-29 15:38:40 deri.iris.queryrewriting.GroupPreferencesTest [INFO] Processing query: Q1(?A) :- cuisine(?A).
+2013-10-29 15:38:40 deri.iris.queryrewriting.ParallelRewriter [DEBUG] Reducing query.
+2013-10-29 15:38:40 deri.iris.queryrewriting.ParallelRewriter [DEBUG] Decomposing query.
+2013-10-29 15:38:40 deri.iris.queryrewriting.RewritingUtils [DEBUG] Computing affected positions.
+2013-10-29 15:38:40 deri.iris.queryrewriting.RewritingUtils [DEBUG] Get the components.
+2013-10-29 15:38:40 deri.iris.queryrewriting.ParallelRewriter [DEBUG] Rewriting query.
+2013-10-29 15:38:40 deri.iris.queryrewriting.LinearRewriter [TRACE] |7 [6]
+2013-10-29 15:38:40 deri.iris.queryrewriting.LinearRewriter [TRACE] |16 [9]
+2013-10-29 15:38:40 deri.iris.queryrewriting.LinearRewriter [TRACE] |16 [0]
+2013-10-29 15:38:40 deri.iris.queryrewriting.LinearRewriter [DEBUG] Cleaning auxiliary predicates from 16 queries.
+2013-10-29 15:38:40 deri.iris.queryrewriting.LinearRewriter [DEBUG] done.
+2013-10-29 15:38:40 deri.iris.queryrewriting.LinearRewriter [DEBUG] Applying intra-decomposition subsumption check on 16 queries.
+2013-10-29 15:38:40 deri.iris.queryrewriting.LinearRewriter [DEBUG] done.
+2013-10-29 15:38:40 deri.iris.queryrewriting.GroupPreferencesTest [INFO] Writing the output at: /home/onsa/workspace/IRIS+-/examples/group_test/output/t2/Q1_rew.dtg
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '44').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '29').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '30').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '2').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '31').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '32').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '33').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '34').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '35').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '36').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '37').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '38').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '39').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '40').
+2013-10-29 15:38:40 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '41').
+2013-10-29 15:38:41 deri.iris.queryrewriting.SQLRewriter [DEBUG] Translating Q1(?X0) :- business_categories(?X0, '42').

@@ -1,0 +1,9 @@
+Connect via ssh, change to this directory and do initial checkout:
+> cd /var/www/html/iris-reasoner_org/ant
+> svn checkout https://iris-reasoner.svn.sourceforge.net/svnroot/iris-reasoner iris
+
+Set appropriate permissions:
+> chmod ug+x snapshot.sh
+
+Set up a cronjob:
+0 5 * * * /var/www/html/iris-reasoner_org/ant/snapshot.sh > /var/www/html/iris-reasoner_org/ant/snapshot.log 2> /var/www/html/iris-reasoner_org/ant/snapshot.err
